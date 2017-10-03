@@ -1,9 +1,8 @@
 package selenium.framework.rythmos.datasolutions;
 
-import javafx.scene.shape.MoveTo;
+import javax.swing.text.Highlighter;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -14,11 +13,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-
-
-
-
-
+import com.sun.org.apache.bcel.internal.generic.Select;
+import com.thoughtworks.selenium.webdriven.commands.RemoveSelection;
 
 import selenium.framework.common.CommonMethods;
 import selenium.framework.common.WebDriverManager;
@@ -84,7 +80,7 @@ public class TS_01_DataSolutions extends CommonMethods{
 		        String actual3 = "Lato, sans-serif";
 		        dataSolutionsPage.assertText(TextFontFamily, actual3, dataSolutionsPage.VALIDATE_GDPLPage, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontFamily, actual3, "Validating Data Solutions color Failed.");
-	
+			
 	}
 	@Test(priority = 2)
 	public void validateH8SummaryDataSolutions() throws InterruptedException {
@@ -101,23 +97,23 @@ public class TS_01_DataSolutions extends CommonMethods{
 		        String TextFontSize = Text.getCssValue("font-size");
 		        System.out.println("Text size Is "+TextFontSize+" pixels");
 		        String actual1 = "24px";
-		        dataSolutionsPage.assertText(TextFontSize, actual1, dataSolutionsPage.VALIDATE_GDPLPage, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontSize, actual1, dataSolutionsPage.VALIDATE_DataSolDesc, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontSize, actual1, "Validating Data Solutions size Failed.");
 				String TextFontColor = Text.getCssValue("color");
 		        System.out.println("Text color Is "+TextFontColor+" pixels");
 		        String actual2 = "rgba(255, 255, 255, 1)";
-		        dataSolutionsPage.assertText(TextFontColor, actual2, dataSolutionsPage.VALIDATE_GDPLPage, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontColor, actual2, dataSolutionsPage.VALIDATE_DataSolDesc, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontColor, actual2, "Validating Data Solutions color Failed.");
 				String TextFontFamily = Text.getCssValue("font-family");
 		        System.out.println("Font family Is "+TextFontFamily+" pixels");
 		        String actual3 = "Lato, sans-serif";
-		        dataSolutionsPage.assertText(TextFontFamily, actual3, dataSolutionsPage.VALIDATE_GDPLPage, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontFamily, actual3, dataSolutionsPage.VALIDATE_DataSolDesc, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontFamily, actual3, "Validating Data Solutions color Failed.");
 				String TextFontWeight = Text.getCssValue("font-weight");
 		        System.out.println("Font family Is "+TextFontWeight+" pixels");
 		        String actual4 = "300";
-		        dataSolutionsPage.assertText(TextFontWeight, actual4, dataSolutionsPage.VALIDATE_GDPLPage, "Validating Data Solutions NAME");
-				Assert.assertEquals(TextFontWeight, actual4, "Validating Data Solutions font weight Failed.");
+		        dataSolutionsPage.assertText(TextFontWeight, actual4, dataSolutionsPage.VALIDATE_DataSolDesc, "Validating Data Solutions NAME");
+		        Assert.assertEquals(TextFontWeight, actual4, "Validating Data Solutions font weight Failed.");
 		 }
 
 	@Test(priority = 3)
@@ -494,7 +490,7 @@ public class TS_01_DataSolutions extends CommonMethods{
 				Assert.assertEquals(TextLineHeight, actual5, "Validating Data Solutions linne height Failed.");
 				String TextFontColor = Text.getCssValue("color");
 		        System.out.println("Text color Is "+TextFontColor+" pixels");
-		        String actual2 = "rgba((255, 255, 255, 1)";
+		        String actual2 = "rgba(255, 255, 255, 1)";
 		        dataSolutionsPage.assertText(TextFontColor, actual2, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontColor, actual2, "Validating Data Solutions color Failed.");
 				String TextFontFamily = Text.getCssValue("font-family");

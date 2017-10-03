@@ -22,6 +22,7 @@ public class DataSolutionsPage extends PageControls{
 	}
 	public static final By VALIDATE_DWHPage = By.xpath(".//*[@id='hs_cos_wrapper_widget_1491428851553']/div/h1");
 	public static final By VALIDATE_GDPLPage = By.xpath(".//*[@id='hs_cos_wrapper_widget_1491428745026']/div/h1");
+	public static final By VALIDATE_DataSolDesc = By.xpath(".//*[@id='hs_cos_wrapper_widget_1491428745026']/div/p/span");
 	public static final By Solutions_Page = By.xpath("//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/a");
 	public static final By DataSolutions_Page = By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/a");
 	public static final By DataWarehouse_Page = By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/ul/li[1]/a");
