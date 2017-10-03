@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Purse Module" parallel="tests" thread-count="10" configfailurepolicy="continue" allow-return-values="true">
+
+	<test verbose="2" name="TS_01_PursePolicies_AddPolicies">
+		<classes>
+			<class name="lm.rcx.tests.pursepolicies.TS_01_PursePolicies_AddPolicies" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_PursePolicies_EditPursePolicies">
+		<classes>
+			<class name="lm.rcx.tests.pursepolicies.TS_02_PursePolicies_EditPursePolicies" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_PursePolicies_DeletePolicies">
+		<classes>
+			<class name="lm.rcx.tests.pursepolicies.TS_03_PursePolicies_DeletePolicies" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_PursePolicies_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.pursepolicies.TS_04_PursePolicies_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_PursePolicies_Fieldsettings_VisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.pursepolicies.TS_05_PursePolicies_Fieldsettings_VisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_PursePolicies_Fieldsettings_InVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.pursepolicies.TS_06_PursePolicies_Fieldsettings_InVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_PursePolicies_Sort">
+		<classes>
+			<class name="lm.rcx.tests.pursepolicies.TS_07_PursePolicies_Sort" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_08_PursePolicies_Nullvalues">
+		<classes>
+			<class name="lm.rcx.tests.pursepolicies.TS_08_PursePolicies_Nullvalues" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_09_PursePolicies_Duplicates">
+		<classes>
+			<class
+				name="lm.rcx.tests.pursepolicies.TS_09_PursePolicies_Duplicates" />
+		</classes>
+	</test>
+</suite>

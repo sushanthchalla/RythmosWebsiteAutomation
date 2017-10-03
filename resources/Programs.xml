@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Program Module" parallel="tests" thread-count="10" configfailurepolicy="continue" allow-return-values="true">
+		<test verbose="2" name="TS_01_Programs_AddProgram">
+		<classes>
+			<class name="lm.rcx.tests.programs.TS_01_Programs_AddProgram" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_Programs_EditProgram">
+		<classes>
+			<class name="lm.rcx.tests.programs.TS_02_Programs_EditProgram" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_Programs_DeleteProgram">
+		<classes>
+			<class name="lm.rcx.tests.programs.TS_03_Programs_DeleteProgram" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_Programs_SortPrograms">
+		<classes>
+			<class name="lm.rcx.tests.programs.TS_04_Programs_SortPrograms" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_Programs_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.programs.TS_05_Programs_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_Programs_FieldSettings">
+		<classes>
+			<class name="lm.rcx.tests.programs.TS_06_Programs_FieldSettings" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_Programs_FieldSettings_Invisible_Columns">
+		<classes>
+			<class name="lm.rcx.tests.programs.TS_07_Programs_FieldSettings_Invisible_Columns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_08_Programs_Hyperlink">
+		<classes>
+			<class name="lm.rcx.tests.programs.TS_08_Programs_Hyperlink" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_09_Programs_Duplicate_Values">
+		<classes>
+			<class name="lm.rcx.tests.programs.TS_09_Programs_Duplicate_Values" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_10_Programs_Nullvalue_for_Mandatory">
+		<classes>
+			<class name="lm.rcx.tests.programs.TS_10_Programs_Nullvalue_for_Mandatory" />
+		</classes>
+	</test>
+	
+</suite>

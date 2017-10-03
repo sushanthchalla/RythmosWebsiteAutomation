@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SecuritySetUp Module" parallel="tests" thread-count="10" allow-return-values="true">
+
+
+	<test verbose="2" name="TS_01_SecuritySetUp_AddRole">
+		<classes>
+			<class name="lm.rcx.tests.securitysetup.TS_01_SecuritySetUp_AddRole" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_SecuritySetUp_EditRole">
+		<classes>
+			<class name="lm.rcx.tests.securitysetup.TS_02_SecuritySetUp_EditRole" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_SecuritySetUp_DeleteRole">
+		<classes>
+			<class name="lm.rcx.tests.securitysetup.TS_03_SecuritySetUp_DeleteRole" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_SecuritySetUp_Roles_ShowEntities">
+		<classes>
+			<class name="lm.rcx.tests.securitysetup.TS_04_SecuritySetUp_Roles_ShowEntities" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_SecuritySetUp_Roles_NullValueForMandatoryField">
+		<classes>
+			<class name="lm.rcx.tests.securitysetup.TS_05_SecuritySetUp_Roles_NullValueForMandatoryField" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_SecuritySetup_Roles_Next_Previous_Buttons">
+		<classes>
+			<class name="lm.rcx.tests.securitysetup.TS_06_SecuritySetup_Roles_Next_Previous_Buttons" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_SecuritySetUp_Roles_ValidatingVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.securitysetup.TS_07_SecuritySetUp_Roles_ValidatingVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_08_SecuritySetUp_Roles_ValidatingInvisibleColumnsInRoleTable">
+		<classes>
+			<class name="lm.rcx.tests.securitysetup.TS_08_SecuritySetUp_Roles_ValidatingInvisibleColumnsInRoleTable" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_09_SecuritySetup_RoleTableSort">
+		<classes>
+			<class
+				name="lm.rcx.tests.securitysetup.TS_09_SecuritySetup_RoleTableSort" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_10_SecuritySetUp_Roles_CollapseButton">
+		<classes>
+			<class name="lm.rcx.tests.securitysetup.TS_10_SecuritySetUp_Roles_CollapseButton" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_11_SecuritySetUp_ValidatinglengthConstraintsForRoleName">
+		<classes>
+			<class name="lm.rcx.tests.securitysetup.TS_11_SecuritySetUp_ValidatinglengthConstraintsForRoleName" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_12_SecuritySetUp_Users_AddUser">
+		<classes>
+			<class name="lm.rcx.tests.securitysetup.TS_12_SecuritySetUp_Users_AddUser" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_13_SecuritySetUp_Users_DeleteUser">
+		<classes>
+			<class name="lm.rcx.tests.securitysetup.TS_13_SecuritySetUp_Users_DeleteUser" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_14_SecuritySetUp_Users_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.securitysetup.TS_14_SecuritySetUp_Users_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_15_SecuritySetUp_Users_ValidationPrevious_NextButton">
+		<classes>
+			<class name="lm.rcx.tests.securitysetup.TS_15_SecuritySetUp_Users_ValidationPrevious_NextButton" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_16_SecuritySetUp_Users_ValidatingVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.securitysetup.TS_16_SecuritySetUp_Users_ValidatingVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_17_SecuritySetUp_Users_ValidateInvisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.securitysetup.TS_17_SecuritySetUp_Users_ValidateInvisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_18_SecuritySetUp_Users_Collapse">
+		<classes>
+			<class name="lm.rcx.tests.securitysetup.TS_18_SecuritySetUp_Users_Collapse" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_19_SecuritySetUp_Users_Sort">
+		<classes>
+			<class name="lm.rcx.tests.securitysetup.TS_19_SecuritySetUp_Users_Sort" />
+		</classes>
+	</test>
+</suite>

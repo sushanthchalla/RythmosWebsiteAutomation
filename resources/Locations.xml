@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Locations Module" parallel="tests" thread-count="10" configfailurepolicy="continue" allow-return-values="true">
+
+
+	<test verbose="2" name="TS_01_Locations_AddLocation">
+		<classes>
+			<class name="lm.rcx.tests.locations.TS_01_Locations_AddLocation" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_Locations_EditLocation">
+		<classes>
+			<class name="lm.rcx.tests.locations.TS_02_Locations_EditLocation" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_Locations_DeleteLocation">
+		<classes>
+			<class name="lm.rcx.tests.locations.TS_03_Locations_DeleteLocation" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_Locations_SearchLocation">
+		<classes>
+			<class name="lm.rcx.tests.locations.TS_04_Locations_SearchLocation" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_Locations_SortLocation">
+		<classes>
+			<class name="lm.rcx.tests.locations.TS_05_Locations_SortLocation" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_Locations_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.locations.TS_06_Locations_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_Locations_Fieldsettings_VisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.locations.TS_07_Locations_Fieldsettings_VisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_08_Locations_Fieldsettings_InVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.locations.TS_08_Locations_Fieldsettings_InVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name=" TS_09_Locations_DuplicateLocation">
+		<classes>
+			<class
+				name="lm.rcx.tests.locations.TS_09_Locations_DuplicateLocation" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_10_Locations_Next_Previous_Buttons">
+		<classes>
+			<class name="lm.rcx.tests.locations.TS_10_Locations_Next_Previous_Buttons" />
+		</classes>
+	</test>
+	
+</suite>

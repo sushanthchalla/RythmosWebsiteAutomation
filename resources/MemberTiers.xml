@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MemberTiers Module" parallel="tests" thread-count="4" configfailurepolicy="continue" allow-return-values="true">
+		<test verbose="2" name="TS_01_EditTier">
+		<classes>
+			<class name="lm.rcx.tests.membertiers.TS_01_EditTier" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.membertiers.TS_02_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_validateVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.membertiers.TS_03_validateVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_ValidateInVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.membertiers.TS_04_ValidateInVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_ValidatenextAndPreviousButtons">
+		<classes>
+			<class name="lm.rcx.tests.membertiers.TS_05_ValidatenextAndPreviousButtons" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_Sort">
+		<classes>
+			<class name="lm.rcx.tests.membertiers.TS_06_Sort" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_UpgradeAndDowngradeTier">
+		<classes>
+			<class name="lm.rcx.tests.membertiers.TS_07_UpgradeAndDowngradeTier" />
+		</classes>
+	</test>
+	
+	</suite>

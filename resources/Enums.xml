@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Enums Module" parallel="tests" thread-count="10" configfailurepolicy="continue" allow-return-values="true">
+
+	<test verbose="2" name="TS_01_Enums_AddEnum">
+		<classes>
+			<class name="lm.rcx.tests.enums.TS_01_Enums_AddEnum" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_Enums_EditEnum">
+		<classes>
+			<class name="lm.rcx.tests.enums.TS_02_Enums_EditEnum" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_Enums_DeleteEnum">
+		<classes>
+			<class name="lm.rcx.tests.enums.TS_03_Enums_DeleteEnum" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_Enums_SortEnum">
+		<classes>
+			<class name="lm.rcx.tests.enums.TS_04_Enums_SortEnum" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_Enums_SearchEnum">
+		<classes>
+			<class name="lm.rcx.tests.enums.TS_05_Enums_SearchEnum" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_Enums_PaginationEnum">
+		<classes>
+			<class name="lm.rcx.tests.enums.TS_06_Enums_PaginationEnum" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_Enums_Fieldsettings_VisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.enums.TS_07_Enums_Fieldsettings_VisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_08_Enums_Fieldsettings_InVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.enums.TS_08_Enums_Fieldsettings_InVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name=" TS_09_Enums_Error">
+		<classes>
+			<class
+				name="lm.rcx.tests.enums.TS_09_Enums_Error" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_10_Enums_LengthValidation">
+		<classes>
+			<class name="lm.rcx.tests.enums.TS_10_Enums_LengthValidation" />
+		</classes>
+	</test>
+	
+</suite>

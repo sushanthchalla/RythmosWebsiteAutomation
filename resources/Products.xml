@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Products Module" parallel="tests" thread-count="10" configfailurepolicy="continue" allow-return-values="true">
+
+
+	<test verbose="2" name="TS_01_Products_AddProducts">
+		<classes>
+			<class name="lm.rcx.tests.products.TS_01_Products_AddProducts" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_Products_EditProducts">
+		<classes>
+			<class name="lm.rcx.tests.products.TS_02_Products_EditProducts" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_Products_SearchProducts">
+		<classes>
+			<class name="lm.rcx.tests.products.TS_03_Products_SearchProducts" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_Remove_Button">
+		<classes>
+			<class name="lm.rcx.tests.products.TS_04_Remove_Button" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_Products_SortProducts">
+		<classes>
+			<class name="lm.rcx.tests.products.TS_05_Products_SortProducts" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_Products_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.products.TS_06_Products_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_Products_DeleteProduct">
+		<classes>
+			<class name="lm.rcx.tests.products.TS_07_Products_DeleteProduct" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_08_FieldSettings_VisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.products.TS_08_FieldSettings_VisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name=" TS_09_FieldSettings_InvisibleColumns">
+		<classes>
+			<class
+				name="lm.rcx.tests.products.TS_09_FieldSettings_InvisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_10_Duplicate_Products">
+		<classes>
+			<class name="lm.rcx.tests.products.TS_10_Duplicate_Products" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_11_NullValue_For_MandatoryField">
+		<classes>
+			<class name="lm.rcx.tests.products.TS_11_NullValue_For_MandatoryField" />
+		</classes>
+	</test>
+	
+</suite>

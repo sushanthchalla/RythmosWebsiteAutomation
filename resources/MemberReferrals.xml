@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MemberReferrals Module" parallel="tests" thread-count="4" configfailurepolicy="continue" allow-return-values="true">
+		<test verbose="2" name="TS_01_Referrals_Add">
+		<classes>
+			<class name="lm.rcx.tests.memberreferrals.TS_01_Referrals_Add" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_Referrals_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.memberreferrals.TS_02_Referrals_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_Referrals_Fieldsettings_VisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.memberreferrals.TS_03_Referrals_Fieldsettings_VisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_Referrals_Fieldsettings_InVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.memberreferrals.TS_04_Referrals_Fieldsettings_InVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_Referrals_Sort">
+		<classes>
+			<class name="lm.rcx.tests.memberreferrals.TS_05_Referrals_Sort" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_Referrals_Error">
+		<classes>
+			<class name="lm.rcx.tests.memberreferrals.TS_06_Referrals_Error" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_Referrals_LengthConstrains">
+		<classes>
+			<class name="lm.rcx.tests.memberreferrals.TS_07_Referrals_LengthConstrains" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_08_Referrals_Updated">
+		<classes>
+			<class name="lm.rcx.tests.memberreferrals.TS_08_Referrals_Updated" />
+		</classes>
+	</test>
+	</suite>

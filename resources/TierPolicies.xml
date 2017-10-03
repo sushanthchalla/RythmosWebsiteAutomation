@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tier Module" parallel="tests" thread-count="10" configfailurepolicy="continue" allow-return-values="true">
+
+	<test verbose="2" name="TS_01_TierPolicies_AddTierPolicy">
+		<classes>
+			<class name="lm.rcx.tests.tierpolicies.TS_01_TierPolicies_AddTierPolicy" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_TierPolicies_Customization_EditTierPolicies">
+		<classes>
+			<class name="lm.rcx.tests.tierpolicies.TS_02_TierPolicies_Customization_EditTierPolicies" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_TierPolicies_DeleteTierPolicies">
+		<classes>
+			<class name="lm.rcx.tests.tierpolicies.TS_03_TierPolicies_DeleteTierPolicies" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_TierPolicies_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.tierpolicies.TS_04_TierPolicies_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_TierPolicies_Fieldsettings_VisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.tierpolicies.TS_05_TierPolicies_Fieldsettings_VisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_TierPolicies_Fieldsettings_InVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.tierpolicies.TS_06_TierPolicies_Fieldsettings_InVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_TierPolicies_Sorting">
+		<classes>
+			<class name="lm.rcx.tests.tierpolicies.TS_07_TierPolicies_Sorting" />
+		</classes>
+	</test>
+	<test verbose="2" name=" TS_08_TierPolicies_Nullvalues">
+		<classes>
+			<class name="lm.rcx.tests.tierpolicies.TS_08_TierPolicies_Nullvalues" />
+		</classes>
+	</test>
+	<test verbose="2" name=" TS_09_TierPolicies_Duplicate">
+		<classes>
+			<class
+				name="lm.rcx.tests.tierpolicies.TS_09_TierPolicies_Duplicate" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_10_TierPolicies_EditTierPolicies">
+		<classes>
+			<class name="lm.rcx.tests.tierpolicies.TS_10_TierPolicies_EditTierPolicies" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_11_TierPolicies_Customization_DeleteTierPolicies">
+		<classes>
+			<class name="lm.rcx.tests.tierpolicies.TS_11_TierPolicies_Customization_DeleteTierPolicies" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_12_TierPolicies_Customization_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.tierpolicies.TS_12_TierPolicies_Customization_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_13_TierPolicies_Customization_VisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.tierpolicies.TS_13_TierPolicies_Customization_VisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_14_TierPolicies_Customization_InVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.tierpolicies.TS_14_TierPolicies_Customization_InVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_15_TierPolicies_Customization_Sorting">
+		<classes>
+			<class name="lm.rcx.tests.tierpolicies.TS_15_TierPolicies_Customization_Sorting" />
+		</classes>
+	</test>
+	
+</suite>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MemberLoyaltyIDs Module" parallel="tests" thread-count="4" configfailurepolicy="continue" allow-return-values="true">
+		<test verbose="2" name="TS_01_LoyaltyID_Updated">
+		<classes>
+			<class name="lm.rcx.tests.memberloyaltyids.TS_01_LoyaltyID_Updated" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_LoyaltyID_Add">
+		<classes>
+			<class name="lm.rcx.tests.memberloyaltyids.TS_02_LoyaltyID_Add" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_LoyaltyID_Edit">
+		<classes>
+			<class name="lm.rcx.tests.memberloyaltyids.TS_03_LoyaltyID_Edit" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_LoyaltyID_Sort">
+		<classes>
+			<class name="lm.rcx.tests.memberloyaltyids.TS_04_LoyaltyID_Sort" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_LoyaltyID_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.memberloyaltyids.TS_05_LoyaltyID_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_LoyaltyID_Fieldsettings_VisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.memberloyaltyids.TS_06_LoyaltyID_Fieldsettings_VisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_LoyaltyID_Fieldsettings_InVIsibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.memberloyaltyids.TS_07_LoyaltyID_Fieldsettings_InVIsibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_08_LoyaltyID_Error">
+		<classes>
+			<class name="lm.rcx.tests.memberloyaltyids.TS_08_LoyaltyID_Error" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_09_LoyaltyID_Delete">
+		<classes>
+			<class name="lm.rcx.tests.memberloyaltyids.TS_09_LoyaltyID_Delete" />
+		</classes>
+	</test>
+	</suite>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Members Module" parallel="tests" thread-count="4" configfailurepolicy="continue" allow-return-values="true">
+
+
+	<test verbose="2" name="TS_01_Members_AddMember">
+		<classes>
+			<class name="lm.rcx.tests.members.TS_01_Members_AddMember" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_Members_EditMember">
+		<classes>
+			<class name="lm.rcx.tests.members.TS_02_Members_EditMember" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_Members_NullValueForMandatoryFields">
+		<classes>
+			<class name="lm.rcx.tests.members.TS_03_Members_NullValueForMandatoryFields" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_Members_AddDuplicateRecord">
+		<classes>
+			<class name="lm.rcx.tests.members.TS_04_Members_AddDuplicateRecord" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_Members_GivingInvalidCredentials">
+		<classes>
+			<class name="lm.rcx.tests.members.TS_05_Members_GivingInvalidCredentials" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_Members_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.members.TS_06_Members_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_Members_AdvancedSearch">
+		<classes>
+			<class name="lm.rcx.tests.members.TS_07_Members_AdvancedSearch" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_08_Members_ValidatingVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.members.TS_08_Members_ValidatingVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_09_Members_ValidatingInvisibleColumnsInMemberTable">
+		<classes>
+			<class
+				name="lm.rcx.tests.members.TS_09_Members_ValidatingInvisibleColumnsInMemberTable" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_10_Members_ValidatingLengthConstraints">
+		<classes>
+			<class name="lm.rcx.tests.members.TS_10_Members_ValidatingLengthConstraints" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_11_Members_ValidatingSearch">
+		<classes>
+			<class name="lm.rcx.tests.members.TS_11_Members_ValidatingSearch" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_12_Members_Sort">
+		<classes>
+			<class name="lm.rcx.tests.members.TS_12_Members_Sort" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_13_Members_Collapse">
+		<classes>
+			<class name="lm.rcx.tests.members.TS_13_Members_Collapse" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_14_Members_Next_Previous_Buttons">
+		<classes>
+			<class name="lm.rcx.tests.members.TS_14_Members_Next_Previous_Buttons" />
+		</classes>
+	</test> 
+</suite>

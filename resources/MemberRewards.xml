@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MemberRewards Module" parallel="tests" thread-count="4" configfailurepolicy="continue" allow-return-values="true">
+		<test verbose="2" name="TS_01_AddReward">
+		<classes>
+			<class name="lm.rcx.tests.memberrewards.TS_01_AddReward" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_EditReward">
+		<classes>
+			<class name="lm.rcx.tests.memberrewards.TS_02_EditReward" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_DeleteReward">
+		<classes>
+			<class name="lm.rcx.tests.memberrewards.TS_03_DeleteReward" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.memberrewards.TS_04_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_ValidateVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.memberrewards.TS_05_ValidateVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_ValidateInVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.memberrewards.TS_06_ValidateInVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_ValidatenextAndPreviousButtons">
+		<classes>
+			<class name="lm.rcx.tests.memberrewards.TS_07_ValidatenextAndPreviousButtons" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_08_Sorting">
+		<classes>
+			<class name="lm.rcx.tests.memberrewards.TS_08_Sorting" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_09_DuplicateReward">
+		<classes>
+			<class name="lm.rcx.tests.memberrewards.TS_09_DuplicateReward" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_10_UsesLeftValue">
+		<classes>
+			<class name="lm.rcx.tests.memberrewards.TS_10_UsesLeftValue" />
+		</classes>
+	</test>		
+</suite>

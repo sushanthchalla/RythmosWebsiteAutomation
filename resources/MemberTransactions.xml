@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MemberTransactions Module" parallel="tests" thread-count="4" configfailurepolicy="continue" allow-return-values="true">
+		<test verbose="2" name="TS_01_MemberTransactions_Verification">
+		<classes>
+			<class name="lm.rcx.tests.membertransactions.TS_01_MemberTransactions_Verification" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_MemberTransactions_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.membertransactions.TS_02_MemberTransactions_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_MemberTransactions_ValidatingVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.membertransactions.TS_03_MemberTransactions_ValidatingVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_MemberTransactions_ValidatingInVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.membertransactions.TS_04_MemberTransactions_ValidatingInVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_MemberTransactions_Collapse">
+		<classes>
+			<class name="lm.rcx.tests.membertransactions.TS_05_MemberTransactions_Collapse" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_MemberTransactions_Previous_Next_Buttons">
+		<classes>
+			<class name="lm.rcx.tests.membertransactions.TS_06_MemberTransactions_Previous_Next_Buttons" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_MemberTransactions_LineItems_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.membertransactions.TS_07_MemberTransactions_LineItems_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_08_MemberTransactions_LineItems_VisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.membertransactions.TS_08_MemberTransactions_LineItems_VisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_09_MemberTransactions_LineItems_InVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.membertransactions.TS_09_MemberTransactions_LineItems_InVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_10_MemberTransactions_LineItems_Previous_Next_Buttons">
+		<classes>
+			<class name="lm.rcx.tests.membertransactions.TS_10_MemberTransactions_LineItems_Previous_Next_Buttons" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_11_MemberTransactions_TenderItems_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.membertransactions.TS_11_MemberTransactions_TenderItems_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_12_MemberTransactions_TenderItems_VisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.membertransactions.TS_12_MemberTransactions_TenderItems_VisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_13_MemberTransactions_TenderItems_InVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.membertransactions.TS_13_MemberTransactions_TenderItems_InVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_14_MemberTransactions_TenderItems_Previous_Next_Buttons">
+		<classes>
+			<class name="lm.rcx.tests.membertransactions.TS_14_MemberTransactions_TenderItems_Previous_Next_Buttons" />
+		</classes>
+	</test>
+	</suite>

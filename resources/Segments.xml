@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Segments Module" parallel="tests" thread-count="10" configfailurepolicy="continue" allow-return-values="true">
+		<test verbose="2" name="TS_01_Segments_AddSegment">
+		<classes>
+			<class name="lm.rcx.tests.segments.TS_01_Segments_AddSegment" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_Segements_EditSegment">
+		<classes>
+			<class name="lm.rcx.tests.segments.TS_02_Segements_EditSegment" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_Segments_DeleteSegment">
+		<classes>
+			<class name="lm.rcx.tests.segments.TS_03_Segments_DeleteSegment" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_Segments_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.segments.TS_04_Segments_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_Segments_Collapse">
+		<classes>
+			<class name="lm.rcx.tests.segments.TS_05_Segments_Collapse" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_Segments_Next_Previous_Buttons">
+		<classes>
+			<class name="lm.rcx.tests.segments.TS_06_Segments_Next_Previous_Buttons" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_Segments_ValidateFieldSettingsVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.segments.TS_07_Segments_ValidateFieldSettingsVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_08_Segments_ValidateFieldSettingsInvisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.segments.TS_08_Segments_ValidateFieldSettingsInvisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_09_Segments_ValidatingLengthConstraints">
+		<classes>
+			<class name="lm.rcx.tests.segments.TS_09_Segments_ValidatingLengthConstraints" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_10_Segments_Sort">
+		<classes>
+			<class name="lm.rcx.tests.segments.TS_10_Segments_Sort" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_11_Segments_AddDuplicateRecords">
+		<classes>
+			<class name="lm.rcx.tests.segments.TS_11_Segments_AddDuplicateRecords" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_12_Segments_NullValueForMandatoryFields">
+		<classes>
+			<class name="lm.rcx.tests.segments.TS_12_Segments_NullValueForMandatoryFields" />
+		</classes>
+	</test>
+</suite>

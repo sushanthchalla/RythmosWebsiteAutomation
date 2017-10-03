@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MemberSegments Module" parallel="tests" thread-count="4" configfailurepolicy="continue" allow-return-values="true">
+		<test verbose="2" name="TS_01_Segments_Add">
+		<classes>
+			<class name="lm.rcx.tests.membersegments.TS_01_Segments_Add" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_Segments_Edit">
+		<classes>
+			<class name="lm.rcx.tests.membersegments.TS_02_Segments_Edit" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_Segments_Delete">
+		<classes>
+			<class name="lm.rcx.tests.membersegments.TS_03_Segments_Delete" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_Segments_Sort">
+		<classes>
+			<class name="lm.rcx.tests.membersegments.TS_04_Segments_Sort" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_Segments_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.membersegments.TS_05_Segments_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_Segments_ValidatingVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.membersegments.TS_06_Segments_ValidatingVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_Segments_ValidatingInVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.membersegments.TS_07_Segments_ValidatingInVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_08_Segments_DuplicateError">
+		<classes>
+			<class name="lm.rcx.tests.membersegments.TS_08_Segments_DuplicateError" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_09_Segments_ValidationError">
+		<classes>
+			<class name="lm.rcx.tests.membersegments.TS_09_Segments_ValidationError" />
+		</classes>
+	</test>
+	</suite>

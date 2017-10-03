@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MemberBadges Module" parallel="tests" thread-count="4" configfailurepolicy="continue" allow-return-values="true">
+		<test verbose="2" name="TS_01_Badge_Add">
+		<classes>
+			<class name="lm.rcx.tests.memberbadges.TS_01_Badge_Add" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_Badge_Edit">
+		<classes>
+			<class name="lm.rcx.tests.memberbadges.TS_02_Badge_Edit" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_Badge_Delete">
+		<classes>
+			<class name="lm.rcx.tests.memberbadges.TS_03_Badge_Delete" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_Badge_Sort">
+		<classes>
+			<class name="lm.rcx.tests.memberbadges.TS_04_Badge_Sort" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_Badge_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.memberbadges.TS_05_Badge_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_Badge_Fieldsettings_VisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.memberbadges.TS_06_Badge_Fieldsettings_VisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_Badge_Fieldsettings_InVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.memberbadges.TS_07_Badge_Fieldsettings_InVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_08_Badge_Duplicate">
+		<classes>
+			<class name="lm.rcx.tests.memberbadges.TS_08_Badge_Duplicate" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_09_Badge_Next_Previous_Buttons">
+		<classes>
+			<class name="lm.rcx.tests.memberbadges.TS_09_Badge_Next_Previous_Buttons" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_10_Badge_NoValue">
+		<classes>
+			<class name="lm.rcx.tests.memberbadges.TS_10_Badge_NoValue" />
+		</classes>
+	</test>
+	
+	</suite>

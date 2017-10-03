@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DMA Module" parallel="tests" thread-count="10" configfailurepolicy="continue" allow-return-values="true">
+		<test verbose="2" name="TS_01_DMA_AddDMA">
+		<classes>
+			<class name="lm.rcx.tests.dma.TS_01_DMA_AddDMA" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_DMA_EditDMA">
+		<classes>
+			<class name="lm.rcx.tests.dma.TS_02_DMA_EditDMA" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_DMA_DeleteDMA">
+		<classes>
+			<class name="lm.rcx.tests.dma.TS_03_DMA_DeleteDMA" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_DMA_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.dma.TS_04_DMA_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_DMA_Collapse">
+		<classes>
+			<class name="lm.rcx.tests.dma.TS_05_DMA_Collapse" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_DMA_ValidateFieldSettingsVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.dma.TS_06_DMA_ValidateFieldSettingsVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_DMA_ValidateFildSettingsInvisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.dma.TS_07_DMA_ValidateFildSettingsInvisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_08_DMA_ValidateLenghtConstraints">
+		<classes>
+			<class name="lm.rcx.tests.dma.TS_08_DMA_ValidateLenghtConstraints" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_09_DMA_Sort">
+		<classes>
+			<class name="lm.rcx.tests.dma.TS_09_DMA_Sort" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_10_AddDuplicateDMARecords">
+		<classes>
+			<class name="lm.rcx.tests.dma.TS_10_AddDuplicateDMARecords" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_11_AddDuplicateZipCodestoDMA">
+		<classes>
+			<class name="lm.rcx.tests.dma.TS_11_AddDuplicateZipCodestoDMA" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_12_Validate_ZipCode_DataType">
+		<classes>
+			<class name="lm.rcx.tests.dma.TS_12_Validate_ZipCode_DataType" />
+		</classes>
+	</test>
+</suite>

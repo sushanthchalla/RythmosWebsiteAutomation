@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Rules Module" parallel="tests" thread-count="10" configfailurepolicy="continue" allow-return-values="true">
+		<test verbose="2" name="TS_01_Rules_AddRule">
+		<classes>
+			<class name="lm.rcx.tests.rules.TS_01_Rules_AddRule" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_Rules_EditRule">
+		<classes>
+			<class name="lm.rcx.tests.rules.TS_02_Rules_EditRule" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_Rules_DeleteRule">
+		<classes>
+			<class name="lm.rcx.tests.rules.TS_03_Rules_DeleteRule" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_Rules_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.rules.TS_04_Rules_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_Rules_FieldSettings_VisisbleColumns">
+		<classes>
+			<class name="lm.rcx.tests.rules.TS_05_Rules_FieldSettings_VisisbleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_Rules_FieldSettings_InvisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.rules.TS_06_Rules_FieldSettings_InvisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_Rules_DuplicateRecords">
+		<classes>
+			<class name="lm.rcx.tests.rules.TS_07_Rules_DuplicateRecords" />
+		</classes>
+	</test>
+	
+</suite>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Partner Module" parallel="tests" thread-count="10" configfailurepolicy="continue" allow-return-values="true">
+
+	<test verbose="2" name="TS_01_Partners_AddPartner">
+		<classes>
+			<class name="lm.rcx.tests.partners.TS_01_Partners_AddPartner" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_Partners_EditPartners">
+		<classes>
+			<class name="lm.rcx.tests.partners.TS_02_Partners_EditPartners" />
+		</classes>
+	</test>
+	<test verbose="2" name=" TS_03_Partners_DeletePartner">
+		<classes>
+			<class name="lm.rcx.tests.partners.TS_03_Partners_DeletePartner" />
+		</classes>
+	</test>
+	<test verbose="2" name=" TS_04_Partners_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.partners.TS_04_Partners_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name=" TS_05_Partners_Fieldsettings_VisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.partners.TS_05_Partners_Fieldsettings_VisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name=" TS_06_Partners_Fieldsettings_InVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.partners.TS_06_Partners_Fieldsettings_InVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name=" TS_07_Partners_Sorting">
+		<classes>
+			<class name="lm.rcx.tests.partners.TS_07_Partners_Sorting" />
+		</classes>
+	</test>
+	<test verbose="2" name=" TS_08_Partners_NullValues">
+		<classes>
+			<class name="lm.rcx.tests.partners.TS_08_Partners_NullValues" />
+		</classes>
+	</test>
+	<test verbose="2" name="  TS_09_Partners_Duplicate">
+		<classes>
+			<class name="lm.rcx.tests.partners.TS_09_Partners_Duplicate" />
+		</classes>
+	</test>
+</suite>

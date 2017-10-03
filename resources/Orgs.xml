@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Orgs Module" parallel="tests" thread-count="10" configfailurepolicy="continue" allow-return-values="true">
+		<test verbose="2" name="TS_01_Validate_Org_Details">
+		<classes>
+			<class name="lm.rcx.tests.orgs.TS_01_Validate_Org_Details" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_Validate_Orgs_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.orgs.TS_02_Validate_Orgs_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_Orgs_ValidateFieldSettingsforVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.orgs.TS_03_Orgs_ValidateFieldSettingsforVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_Orgs_ValidateFieldSettingsforInvisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.orgs.TS_04_Orgs_ValidateFieldSettingsforInvisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_Orgs_Collapse">
+		<classes>
+			<class name="lm.rcx.tests.orgs.TS_05_Orgs_Collapse" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_Validate_OrgWithInvalidDetails">
+		<classes>
+			<class name="lm.rcx.tests.orgs.TS_06_Validate_OrgWithInvalidDetails" />
+		</classes>
+	</test>
+	
+</suite>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Reward Module" parallel="tests" thread-count="10" configfailurepolicy="continue" allow-return-values="true">
+
+
+	<test verbose="2" name="TS_01_AddRewardPolicy">
+		<classes>
+			<class name="lm.rcx.tests.rewardpolicies.TS_01_AddRewardPolicy" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_EditRewardPolicy">
+		<classes>
+			<class name="lm.rcx.tests.rewardpolicies.TS_02_EditRewardPolicy" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_DeleteRewardPolicy">
+		<classes>
+			<class name="lm.rcx.tests.rewardpolicies.TS_03_DeleteRewardPolicy" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_RewardPolicies_Pagination">
+		<classes>
+			<class name="lm.rcx.tests.rewardpolicies.TS_04_RewardPolicies_Pagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_Rewardpolicies_ValidatingVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.rewardpolicies.TS_05_Rewardpolicies_ValidatingVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_Rewardpolicies_ValidatingInvisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.rewardpolicies.TS_06_Rewardpolicies_ValidatingInvisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_RewardPolicies_CollapseButton">
+		<classes>
+			<class name="lm.rcx.tests.rewardpolicies.TS_07_RewardPolicies_CollapseButton" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_08_RewardPolicies_Sort">
+		<classes>
+			<class name="lm.rcx.tests.rewardpolicies.TS_08_RewardPolicies_Sort" />
+		</classes>
+	</test>
+	<test verbose="2" name=" TS_09_Rewardpolicies_AddDuplicates">
+		<classes>
+			<class
+				name="lm.rcx.tests.rewardpolicies.TS_09_Rewardpolicies_AddDuplicates" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_10_NullValueForMandatoryFields">
+		<classes>
+			<class name="lm.rcx.tests.rewardpolicies.TS_10_NullValueForMandatoryFields" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_11_ValidateNextPreviousButton">
+		<classes>
+			<class name="lm.rcx.tests.rewardpolicies.TS_11_ValidateNextPreviousButton" />
+		</classes>
+	</test>
+	
+</suite>

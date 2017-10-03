@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MemberPreference Module" parallel="tests" thread-count="10" configfailurepolicy="continue" allow-return-values="true">
+		<test verbose="2" name="TS_01_AddPreference">
+		<classes>
+			<class name="lm.rcx.tests.memberpreferences.TS_01_AddPreference" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_02_EditMemberPreference">
+		<classes>
+			<class name="lm.rcx.tests.memberpreferences.TS_02_EditMemberPreference" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_03_DeletePreference">
+		<classes>
+			<class name="lm.rcx.tests.memberpreferences.TS_03_DeletePreference" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_04_ValidateNextAndPreviousButtons">
+		<classes>
+			<class name="lm.rcx.tests.memberpreferences.TS_04_ValidateNextAndPreviousButtons" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_05_ValidatePagination">
+		<classes>
+			<class name="lm.rcx.tests.memberpreferences.TS_05_ValidatePagination" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_06_ValidateVisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.memberpreferences.TS_06_ValidateVisibleColumns" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_07_AddDuplicatePreference">
+		<classes>
+			<class name="lm.rcx.tests.memberpreferences.TS_07_AddDuplicatePreference" />
+		</classes>
+	</test>
+	<test verbose="2" name="TS_08_ValidateInvisibleColumns">
+		<classes>
+			<class name="lm.rcx.tests.memberpreferences.TS_08_ValidateInvisibleColumns" />
+		</classes>
+	</test>
+	</suite>
