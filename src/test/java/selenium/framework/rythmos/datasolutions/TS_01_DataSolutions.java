@@ -1,8 +1,7 @@
 package selenium.framework.rythmos.datasolutions;
 
-import javax.swing.text.Highlighter;
-
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -12,9 +11,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import com.sun.org.apache.bcel.internal.generic.Select;
-import com.thoughtworks.selenium.webdriven.commands.RemoveSelection;
 
 import selenium.framework.common.CommonMethods;
 import selenium.framework.common.WebDriverManager;
@@ -93,6 +89,8 @@ public class TS_01_DataSolutions extends CommonMethods{
 		        WebElement Text = driver.findElement(By.xpath(".//*[@id='hs_cos_wrapper_widget_1491428745026']/div/p/span"));
 		        Actions action = new Actions(driver);
 		        action.moveToElement(Text).perform();
+		        ((JavascriptExecutor) driver).executeScript(
+		                "arguments[0].scrollIntoView();", Text);
 		        //Get width of element.
 		        String TextFontSize = Text.getCssValue("font-size");
 		        System.out.println("Text size Is "+TextFontSize+" pixels");
@@ -127,6 +125,8 @@ public class TS_01_DataSolutions extends CommonMethods{
 		        WebElement Text = driver.findElement(By.xpath(".//*[@id='hs_cos_wrapper_module_1487260765840671']/p"));
 		        Actions action = new Actions(driver);
 		        action.moveToElement(Text);
+		        ((JavascriptExecutor) driver).executeScript(
+		                "arguments[0].scrollIntoView();", Text);
 		        //Get width of element.
 		        String TextFontSize = Text.getCssValue("font-size");
 		        System.out.println("Text size Is "+TextFontSize+" pixels");
@@ -165,31 +165,33 @@ public class TS_01_DataSolutions extends CommonMethods{
 		        WebElement Text = driver.findElement(By.xpath(".//*[@id='hs_cos_wrapper_module_1489585484893766']/div/div[1]/h4/a"));
 		        Actions action = new Actions(driver);
 		        action.moveToElement(Text);
+		        ((JavascriptExecutor) driver).executeScript(
+		                "arguments[0].scrollIntoView();", Text);
 		        //Get width of element.
 		        String TextFontSize = Text.getCssValue("font-size");
 		        System.out.println("Text size Is "+TextFontSize+" pixels");
 		        String actual1 = "23px";
-		        dataSolutionsPage.assertText(TextFontSize, actual1, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontSize, actual1, dataSolutionsPage.VALIDATE_DWH_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontSize, actual1, "Validating Data Solutions font size Failed.");
 				String TextLineHeight = Text.getCssValue("line-height");
 		        System.out.println("Text size Is "+TextLineHeight+" pixels");
 		        String actual5 = "26px";
-		        dataSolutionsPage.assertText(TextLineHeight, actual5, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextLineHeight, actual5, dataSolutionsPage.VALIDATE_DWH_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextLineHeight, actual5, "Validating Data Solutions linne height Failed.");
 				String TextFontColor = Text.getCssValue("color");
 		        System.out.println("Text color Is "+TextFontColor+" pixels");
 		        String actual2 = "rgba(240, 90, 40, 1)";
-		        dataSolutionsPage.assertText(TextFontColor, actual2, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontColor, actual2, dataSolutionsPage.VALIDATE_DWH_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontColor, actual2, "Validating Data Solutions color Failed.");
 				String TextFontFamily = Text.getCssValue("font-family");
 		        System.out.println("Font family Is "+TextFontFamily+" pixels");
 		        String actual3 = "Lato, sans-serif";
-		        dataSolutionsPage.assertText(TextFontFamily, actual3, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontFamily, actual3, dataSolutionsPage.VALIDATE_DWH_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontFamily, actual3, "Validating Data Solutions color Failed.");
 				String TextFontWeight = Text.getCssValue("font-weight");
 		        System.out.println("Font family Is "+TextFontWeight+" pixels");
 		        String actual4 = "300";
-		        dataSolutionsPage.assertText(TextFontWeight, actual4, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontWeight, actual4, dataSolutionsPage.VALIDATE_DWH_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontWeight, actual4, "Validating Data Solutions font weight Failed.");
 		 }
 	
@@ -204,31 +206,33 @@ public class TS_01_DataSolutions extends CommonMethods{
 		        WebElement Text = driver.findElement(By.xpath(".//*[@id='hs_cos_wrapper_module_1489585491508769']/div/div[1]/h4/a"));
 		        Actions action = new Actions(driver);
 		        action.moveToElement(Text);
+		        ((JavascriptExecutor) driver).executeScript(
+		                "arguments[0].scrollIntoView();", Text);
 		        //Get width of element.
 		        String TextFontSize = Text.getCssValue("font-size");
 		        System.out.println("Text size Is "+TextFontSize+" pixels");
 		        String actual1 = "23px";
-		        dataSolutionsPage.assertText(TextFontSize, actual1, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontSize, actual1, dataSolutionsPage.VALIDATE_ANALYTICS_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontSize, actual1, "Validating Data Solutions font size Failed.");
 				String TextLineHeight = Text.getCssValue("line-height");
 		        System.out.println("Text size Is "+TextLineHeight+" pixels");
 		        String actual5 = "26px";
-		        dataSolutionsPage.assertText(TextLineHeight, actual5, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextLineHeight, actual5, dataSolutionsPage.VALIDATE_ANALYTICS_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextLineHeight, actual5, "Validating Data Solutions linne height Failed.");
 				String TextFontColor = Text.getCssValue("color");
 		        System.out.println("Text color Is "+TextFontColor+" pixels");
 		        String actual2 = "rgba(240, 90, 40, 1)";
-		        dataSolutionsPage.assertText(TextFontColor, actual2, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontColor, actual2, dataSolutionsPage.VALIDATE_ANALYTICS_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontColor, actual2, "Validating Data Solutions color Failed.");
 				String TextFontFamily = Text.getCssValue("font-family");
 		        System.out.println("Font family Is "+TextFontFamily+" pixels");
 		        String actual3 = "Lato, sans-serif";
-		        dataSolutionsPage.assertText(TextFontFamily, actual3, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontFamily, actual3, dataSolutionsPage.VALIDATE_ANALYTICS_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontFamily, actual3, "Validating Data Solutions color Failed.");
 				String TextFontWeight = Text.getCssValue("font-weight");
 		        System.out.println("Font family Is "+TextFontWeight+" pixels");
 		        String actual4 = "300";
-		        dataSolutionsPage.assertText(TextFontWeight, actual4, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontWeight, actual4, dataSolutionsPage.VALIDATE_ANALYTICS_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontWeight, actual4, "Validating Data Solutions font weight Failed.");
 		 }
 	
@@ -243,31 +247,33 @@ public class TS_01_DataSolutions extends CommonMethods{
 		        WebElement Text = driver.findElement(By.xpath(".//*[@id='hs_cos_wrapper_module_1489585488830768']/div/div[1]/h4/a"));
 		        Actions action = new Actions(driver);
 		        action.moveToElement(Text);
+		        ((JavascriptExecutor) driver).executeScript(
+		                "arguments[0].scrollIntoView();", Text);
 		        //Get width of element.
 		        String TextFontSize = Text.getCssValue("font-size");
 		        System.out.println("Text size Is "+TextFontSize+" pixels");
 		        String actual1 = "23px";
-		        dataSolutionsPage.assertText(TextFontSize, actual1, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontSize, actual1, dataSolutionsPage.VALIDATE_CLOUD_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontSize, actual1, "Validating Data Solutions font size Failed.");
 				String TextLineHeight = Text.getCssValue("line-height");
 		        System.out.println("Text size Is "+TextLineHeight+" pixels");
 		        String actual5 = "26px";
-		        dataSolutionsPage.assertText(TextLineHeight, actual5, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextLineHeight, actual5, dataSolutionsPage.VALIDATE_CLOUD_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextLineHeight, actual5, "Validating Data Solutions linne height Failed.");
 				String TextFontColor = Text.getCssValue("color");
 		        System.out.println("Text color Is "+TextFontColor+" pixels");
 		        String actual2 = "rgba(240, 90, 40, 1)";
-		        dataSolutionsPage.assertText(TextFontColor, actual2, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontColor, actual2, dataSolutionsPage.VALIDATE_CLOUD_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontColor, actual2, "Validating Data Solutions color Failed.");
 				String TextFontFamily = Text.getCssValue("font-family");
 		        System.out.println("Font family Is "+TextFontFamily+" pixels");
 		        String actual3 = "Lato, sans-serif";
-		        dataSolutionsPage.assertText(TextFontFamily, actual3, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontFamily, actual3, dataSolutionsPage.VALIDATE_CLOUD_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontFamily, actual3, "Validating Data Solutions color Failed.");
 				String TextFontWeight = Text.getCssValue("font-weight");
 		        System.out.println("Font family Is "+TextFontWeight+" pixels");
 		        String actual4 = "300";
-		        dataSolutionsPage.assertText(TextFontWeight, actual4, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontWeight, actual4, dataSolutionsPage.VALIDATE_CLOUD_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontWeight, actual4, "Validating Data Solutions font weight Failed.");
 		 }
 	
@@ -282,31 +288,33 @@ public class TS_01_DataSolutions extends CommonMethods{
 		        WebElement Text = driver.findElement(By.xpath(".//*[@id='hs_cos_wrapper_module_1489585492644770']/div/div[1]/h4/a"));
 		        Actions action = new Actions(driver);
 		        action.moveToElement(Text);
+		        ((JavascriptExecutor) driver).executeScript(
+		                "arguments[0].scrollIntoView();", Text);
 		        //Get width of element.
 		        String TextFontSize = Text.getCssValue("font-size");
 		        System.out.println("Text size Is "+TextFontSize+" pixels");
 		        String actual1 = "23px";
-		        dataSolutionsPage.assertText(TextFontSize, actual1, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontSize, actual1, dataSolutionsPage.VALIDATE_SUPPORT_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontSize, actual1, "Validating Data Solutions font size Failed.");
 				String TextLineHeight = Text.getCssValue("line-height");
 		        System.out.println("Text size Is "+TextLineHeight+" pixels");
 		        String actual5 = "26px";
-		        dataSolutionsPage.assertText(TextLineHeight, actual5, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextLineHeight, actual5, dataSolutionsPage.VALIDATE_SUPPORT_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextLineHeight, actual5, "Validating Data Solutions linne height Failed.");
 				String TextFontColor = Text.getCssValue("color");
 		        System.out.println("Text color Is "+TextFontColor+" pixels");
 		        String actual2 = "rgba(240, 90, 40, 1)";
-		        dataSolutionsPage.assertText(TextFontColor, actual2, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontColor, actual2, dataSolutionsPage.VALIDATE_SUPPORT_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontColor, actual2, "Validating Data Solutions color Failed.");
 				String TextFontFamily = Text.getCssValue("font-family");
 		        System.out.println("Font family Is "+TextFontFamily+" pixels");
 		        String actual3 = "Lato, sans-serif";
-		        dataSolutionsPage.assertText(TextFontFamily, actual3, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontFamily, actual3, dataSolutionsPage.VALIDATE_SUPPORT_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontFamily, actual3, "Validating Data Solutions color Failed.");
 				String TextFontWeight = Text.getCssValue("font-weight");
 		        System.out.println("Font family Is "+TextFontWeight+" pixels");
 		        String actual4 = "300";
-		        dataSolutionsPage.assertText(TextFontWeight, actual4, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+		        dataSolutionsPage.assertText(TextFontWeight, actual4, dataSolutionsPage.VALIDATE_SUPPORT_IMAGE, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontWeight, actual4, "Validating Data Solutions font weight Failed.");
 		 }
 	
@@ -321,6 +329,8 @@ public class TS_01_DataSolutions extends CommonMethods{
 		        WebElement Text = driver.findElement(By.xpath(".//*[@id='hs_cos_wrapper_module_14871953872791097']/h3/span"));
 		        Actions action = new Actions(driver);
 		        action.moveToElement(Text);
+		        ((JavascriptExecutor) driver).executeScript(
+		                "arguments[0].scrollIntoView();", Text);
 		        //Get width of element.
 		        String TextFontSize = Text.getCssValue("font-size");
 		        System.out.println("Text size Is "+TextFontSize+" pixels");
@@ -360,6 +370,8 @@ public class TS_01_DataSolutions extends CommonMethods{
 		        WebElement Text = driver.findElement(By.xpath(".//*[@id='hs_cos_wrapper_module_14871953872791097']/div/span"));
 		        Actions action = new Actions(driver);
 		        action.moveToElement(Text);
+		        ((JavascriptExecutor) driver).executeScript(
+		                "arguments[0].scrollIntoView();", Text);
 		        //Get width of element.
 		        String TextFontSize = Text.getCssValue("font-size");
 		        System.out.println("Text size Is "+TextFontSize+" pixels");
@@ -399,6 +411,8 @@ public class TS_01_DataSolutions extends CommonMethods{
 		        WebElement Text = driver.findElement(By.xpath(".//*[@id='hs_cos_wrapper_module_14871958508831107']/a"));
 		        Actions action = new Actions(driver);
 		        action.moveToElement(Text);
+		        ((JavascriptExecutor) driver).executeScript(
+		                "arguments[0].scrollIntoView();", Text);
 		        //Get width of element.
 		        String TextFontSize = Text.getCssValue("font-size");
 		        System.out.println("Text size Is "+TextFontSize+" pixels");
@@ -438,6 +452,8 @@ public class TS_01_DataSolutions extends CommonMethods{
 		        WebElement Text = driver.findElement(By.xpath(".//*[@id='hs_cos_wrapper_module_1489596871484925']/h3/span"));
 		        Actions action = new Actions(driver);
 		        action.moveToElement(Text);
+		        ((JavascriptExecutor) driver).executeScript(
+		                "arguments[0].scrollIntoView();", Text);
 		        //Get width of element.
 		        String TextFontSize = Text.getCssValue("font-size");
 		        System.out.println("Text size Is "+TextFontSize+" pixels");
@@ -477,6 +493,8 @@ public class TS_01_DataSolutions extends CommonMethods{
 		        WebElement Text = driver.findElement(By.xpath(".//*[@id='hs_cos_wrapper_module_14895986248231017']/div/div[1]"));
 		        Actions action = new Actions(driver);
 		        action.moveToElement(Text);
+		        ((JavascriptExecutor) driver).executeScript(
+		                "arguments[0].scrollIntoView();", Text);
 		        //Get width of element.
 		        String TextFontSize = Text.getCssValue("font-size");
 		        System.out.println("Text size Is "+TextFontSize+" pixels");
@@ -500,7 +518,225 @@ public class TS_01_DataSolutions extends CommonMethods{
 				Assert.assertEquals(TextFontFamily, actual3, "Validating Data Solutions color Failed.");
 				String TextFontWeight = Text.getCssValue("font-weight");
 		        System.out.println("Font family Is "+TextFontWeight+" pixels");
-		        String actual4 = "400";
+		        String actual4 = "normal";
+		        dataSolutionsPage.assertText(TextFontWeight, actual4, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontWeight, actual4, "Validating Data Solutions font weight Failed.");
+		 }
+	@Test(priority = 13)
+	public void validateCloudDWH() throws InterruptedException {
+		String testcaseName = new Object() {
+		}.getClass().getEnclosingMethod().getName();
+		ReporterTextBold("Executing Test Case : " + testcaseName);
+	
+		DataSolutionsPage dataSolutionsPage=new DataSolutionsPage(driver);
+		  //Locate element for which you wants to get height and width.
+		        WebElement Text = driver.findElement(By.xpath(".//*[@id='hs_cos_wrapper_module_14895986248231017']/div/div[2]"));
+		        Actions action = new Actions(driver);
+		        action.moveToElement(Text);
+		        ((JavascriptExecutor) driver).executeScript(
+		                "arguments[0].scrollIntoView();", Text);
+		        //Get width of element.
+		        String TextFontSize = Text.getCssValue("font-size");
+		        System.out.println("Text size Is "+TextFontSize+" pixels");
+		        String actual1 = "16px";
+		        dataSolutionsPage.assertText(TextFontSize, actual1, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontSize, actual1, "Validating Data Solutions font size Failed.");
+				String TextLineHeight = Text.getCssValue("line-height");
+		        System.out.println("Text size Is "+TextLineHeight+" pixels");
+		        String actual5 = "23px";
+		        dataSolutionsPage.assertText(TextLineHeight, actual5, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextLineHeight, actual5, "Validating Data Solutions linne height Failed.");
+				String TextFontColor = Text.getCssValue("color");
+		        System.out.println("Text color Is "+TextFontColor+" pixels");
+		        String actual2 = "rgba(255, 255, 255, 1)";
+		        dataSolutionsPage.assertText(TextFontColor, actual2, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontColor, actual2, "Validating Data Solutions color Failed.");
+				String TextBgColor = Text.getCssValue("background-color");
+		        System.out.println("Text color Is "+TextFontColor+" pixels");
+		        String actualcolor = "rgba(78, 78, 78, 0.498039)";
+		        dataSolutionsPage.assertText(TextBgColor, actualcolor, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextBgColor, actualcolor, "Validating Cloud DWH Background color Failed.");
+				String TextFontFamily = Text.getCssValue("font-family");
+		        System.out.println("Font family Is "+TextFontFamily+" pixels");
+		        String actual3 = "Lato, sans-serif";
+		        dataSolutionsPage.assertText(TextFontFamily, actual3, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontFamily, actual3, "Validating Data Solutions color Failed.");
+				String TextFontWeight = Text.getCssValue("font-weight");
+		        System.out.println("Font family Is "+TextFontWeight+" pixels");
+		        String actual4 = "normal";
+		        dataSolutionsPage.assertText(TextFontWeight, actual4, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontWeight, actual4, "Validating Data Solutions font weight Failed.");
+		 }
+	@Test(priority = 14)
+	public void validateOnPremiseDWH() throws InterruptedException {
+		String testcaseName = new Object() {
+		}.getClass().getEnclosingMethod().getName();
+		ReporterTextBold("Executing Test Case : " + testcaseName);
+	
+		DataSolutionsPage dataSolutionsPage=new DataSolutionsPage(driver);
+		  //Locate element for which you wants to get height and width.
+		        WebElement Text = driver.findElement(By.xpath(".//*[@id='hs_cos_wrapper_module_14895986248231017']/div/div[3]"));
+		        Actions action = new Actions(driver);
+		        action.moveToElement(Text);
+		        ((JavascriptExecutor) driver).executeScript(
+		                "arguments[0].scrollIntoView();", Text);
+		        //Get width of element.
+		        String TextFontSize = Text.getCssValue("font-size");
+		        System.out.println("Text size Is "+TextFontSize+" pixels");
+		        String actual1 = "14px";
+		        dataSolutionsPage.assertText(TextFontSize, actual1, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontSize, actual1, "Validating Data Solutions font size Failed.");
+				String TextLineHeight = Text.getCssValue("line-height");
+		        System.out.println("Text size Is "+TextLineHeight+" pixels");
+		        String actual5 = "23px";
+		        dataSolutionsPage.assertText(TextLineHeight, actual5, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextLineHeight, actual5, "Validating Data Solutions linne height Failed.");
+				String TextFontColor = Text.getCssValue("background-color");
+		        System.out.println("Text color Is "+TextFontColor+" pixels");
+		        String actual2 = "rgba(48, 48, 48, 0.6)";
+		        dataSolutionsPage.assertText(TextFontColor, actual2, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontColor, actual2, "Validating Data Solutions color Failed.");
+				String TextFontFamily = Text.getCssValue("font-family");
+		        System.out.println("Font family Is "+TextFontFamily+" pixels");
+		        String actual3 = "Lato, sans-serif";
+		        dataSolutionsPage.assertText(TextFontFamily, actual3, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontFamily, actual3, "Validating Data Solutions color Failed.");
+				String TextFontWeight = Text.getCssValue("font-weight");
+		        System.out.println("Font family Is "+TextFontWeight+" pixels");
+		        String actual4 = "normal";
+		        dataSolutionsPage.assertText(TextFontWeight, actual4, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontWeight, actual4, "Validating Data Solutions font weight Failed.");
+		 }
+	
+	@Test(priority = 15)
+	public void validateAboutRythmos() throws InterruptedException {
+		String testcaseName = new Object() {
+		}.getClass().getEnclosingMethod().getName();
+		ReporterTextBold("Executing Test Case : " + testcaseName);
+	
+		DataSolutionsPage dataSolutionsPage=new DataSolutionsPage(driver);
+		  //Locate element for which you wants to get height and width.
+		        WebElement Text = driver.findElement(By.xpath(".//*[@id='hs_cos_wrapper_module_1487256899243559']/span"));
+		        Actions action = new Actions(driver);
+		        action.moveToElement(Text);
+		        ((JavascriptExecutor) driver).executeScript(
+		                "arguments[0].scrollIntoView();", Text);
+		        //Get width of element.
+		        String TextFontSize = Text.getCssValue("font-size");
+		        System.out.println("Text size Is "+TextFontSize+" pixels");
+		        String actual1 = "30px";
+		        dataSolutionsPage.assertText(TextFontSize, actual1, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontSize, actual1, "Validating Data Solutions font size Failed.");
+				String TextLineHeight = Text.getCssValue("line-height");
+		        System.out.println("Text size Is "+TextLineHeight+" pixels");
+		        String actual5 = "35px";
+		        dataSolutionsPage.assertText(TextLineHeight, actual5, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextLineHeight, actual5, "Validating Data Solutions linne height Failed.");
+				String TextFontColor = Text.getCssValue("color");
+		        System.out.println("Text color Is "+TextFontColor+" pixels");
+		        String actual2 = "rgba(121, 121, 121, 1)";
+		        dataSolutionsPage.assertText(TextFontColor, actual2, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontColor, actual2, "Validating Data Solutions color Failed.");
+				String TextFontFamily = Text.getCssValue("font-family");
+		        System.out.println("Font family Is "+TextFontFamily+" pixels");
+		        String actual3 = "Lato, sans-serif";
+		        dataSolutionsPage.assertText(TextFontFamily, actual3, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontFamily, actual3, "Validating Data Solutions color Failed.");
+				String TextFontWeight = Text.getCssValue("font-weight");
+		        System.out.println("Font family Is "+TextFontWeight+" pixels");
+		        String actual4 = "300";
+		        dataSolutionsPage.assertText(TextFontWeight, actual4, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontWeight, actual4, "Validating Data Solutions font weight Failed.");
+		 
+	}
+	@Test(priority = 16)
+	public void validateVisualization() throws InterruptedException {
+		String testcaseName = new Object() {
+		}.getClass().getEnclosingMethod().getName();
+		ReporterTextBold("Executing Test Case : " + testcaseName);
+	
+		DataSolutionsPage dataSolutionsPage=new DataSolutionsPage(driver);
+		  //Locate element for which you wants to get height and width.
+		        WebElement Text = driver.findElement(By.xpath(".//*[@id='hs_cos_wrapper_module_1487190735025523']/div/div[2]"));
+		        Actions action = new Actions(driver);
+		        action.moveToElement(Text);
+		        ((JavascriptExecutor) driver).executeScript(
+		                "arguments[0].scrollIntoView();", Text);
+		        //Get width of element.
+		        String TextFontSize = Text.getCssValue("font-size");
+		        System.out.println("Text size Is "+TextFontSize+" pixels");
+		        String actual1 = "14px";
+		        dataSolutionsPage.assertText(TextFontSize, actual1, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontSize, actual1, "Validating Data Solutions font size Failed.");
+				String TextLineHeight = Text.getCssValue("line-height");
+		        System.out.println("Text size Is "+TextLineHeight+" pixels");
+		        String actual5 = "23px";
+		        dataSolutionsPage.assertText(TextLineHeight, actual5, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextLineHeight, actual5, "Validating Data Solutions linne height Failed.");
+				String TextFontColor = Text.getCssValue("color");
+		        System.out.println("Text color Is "+TextFontColor+" pixels");
+		        String actual2 = "rgba(255, 255, 255, 1)";
+		        dataSolutionsPage.assertText(TextFontColor, actual2, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontColor, actual2, "Validating Data Solutions color Failed.");
+				String TextBgColor = Text.getCssValue("background-color");
+		        System.out.println("Text color Is "+TextFontColor+" pixels");
+		        String actualcolor = "rgba(78, 78, 78, 0.8)";
+		        dataSolutionsPage.assertText(TextBgColor, actualcolor, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextBgColor, actualcolor, "Validating Cloud DWH Background color Failed.");
+				String TextFontFamily = Text.getCssValue("font-family");
+		        System.out.println("Font family Is "+TextFontFamily+" pixels");
+		        String actual3 = "Lato, sans-serif";
+		        dataSolutionsPage.assertText(TextFontFamily, actual3, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontFamily, actual3, "Validating Data Solutions color Failed.");
+				String TextFontWeight = Text.getCssValue("font-weight");
+		        System.out.println("Font family Is "+TextFontWeight+" pixels");
+		        String actual4 = "300";
+		        dataSolutionsPage.assertText(TextFontWeight, actual4, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontWeight, actual4, "Validating Data Solutions font weight Failed.");
+		 }
+	
+	@Test(priority = 17)
+	public void validateEtlAndDataPrep() throws InterruptedException {
+		String testcaseName = new Object() {
+		}.getClass().getEnclosingMethod().getName();
+		ReporterTextBold("Executing Test Case : " + testcaseName);
+	
+		DataSolutionsPage dataSolutionsPage=new DataSolutionsPage(driver);
+		  //Locate element for which you wants to get height and width.
+		        WebElement Text = driver.findElement(By.xpath(".//*[@id='hs_cos_wrapper_module_1489590650417896']/div/div[1]/img"));
+		        Actions action = new Actions(driver);
+		        action.moveToElement(Text);
+		        ((JavascriptExecutor) driver).executeScript(
+		                "arguments[0].scrollIntoView();", Text);
+		        //Get width of element.
+		        String TextFontSize = Text.getCssValue("font-size");
+		        System.out.println("Text size Is "+TextFontSize+" pixels");
+		        String actual1 = "14px";
+		        dataSolutionsPage.assertText(TextFontSize, actual1, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontSize, actual1, "Validating Data Solutions font size Failed.");
+				String TextLineHeight = Text.getCssValue("line-height");
+		        System.out.println("Text size Is "+TextLineHeight+" pixels");
+		        String actual5 = "23px";
+		        dataSolutionsPage.assertText(TextLineHeight, actual5, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextLineHeight, actual5, "Validating Data Solutions linne height Failed.");
+				String TextFontColor = Text.getCssValue("color");
+		        System.out.println("Text color Is "+TextFontColor+" pixels");
+		        String actual2 = "rgba(121, 121, 121, 1)";
+		        dataSolutionsPage.assertText(TextFontColor, actual2, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontColor, actual2, "Validating Data Solutions color Failed.");
+				String TextBgColor = Text.getCssValue("background-color");
+		        System.out.println("Text color Is "+TextFontColor+" pixels");
+		        String actualcolor = "rgba(78, 78, 78, 0.8)";
+		        dataSolutionsPage.assertText(TextBgColor, actualcolor, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextBgColor, actualcolor, "Validating Cloud DWH Background color Failed.");
+				String TextFontFamily = Text.getCssValue("font-family");
+		        System.out.println("Font family Is "+TextFontFamily+" pixels");
+		        String actual3 = "Lato, sans-serif";
+		        dataSolutionsPage.assertText(TextFontFamily, actual3, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
+				Assert.assertEquals(TextFontFamily, actual3, "Validating Data Solutions color Failed.");
+				String TextFontWeight = Text.getCssValue("font-weight");
+		        System.out.println("Font family Is "+TextFontWeight+" pixels");
+		        String actual4 = "300";
 		        dataSolutionsPage.assertText(TextFontWeight, actual4, dataSolutionsPage.VALIDATE_DataSolutionsDetails, "Validating Data Solutions NAME");
 				Assert.assertEquals(TextFontWeight, actual4, "Validating Data Solutions font weight Failed.");
 		 }

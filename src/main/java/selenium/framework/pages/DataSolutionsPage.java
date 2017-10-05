@@ -30,8 +30,12 @@ public class DataSolutionsPage extends PageControls{
 	public static final By CloudSolutions_Page = By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/ul/li[3]/a");
 	public static final By DataSupport_Page = By.xpath(".//*[@id='hs_menu_wrapper_module_13884994340213']/ul/li[1]/ul/li[1]/ul/li[4]/a");
 	public static final By DataSolutionsH8_Page = By.xpath(".//*[@id='hs_cos_wrapper_widget_1491428745026']/div/p/span");
-	public static final By VALIDATE_DataSolutionsDetails = By.xpath(".//*[@id='hs_cos_wrapper_widget_1491428745026']/div/h1");
-	
+	public static final By VALIDATE_DataSolutionsDetails = By.xpath(".//*[@id='hs_cos_wrapper_module_1487260765840671']/p");
+	public static final By VALIDATE_DWH_IMAGE = By.xpath(".//*[@id='hs_cos_wrapper_module_1489585484893766']/div/a/img");
+	public static final By VALIDATE_ANALYTICS_IMAGE = By.xpath(".//*[@id='hs_cos_wrapper_module_1489585491508769']/div/a/img");
+	public static final By VALIDATE_CLOUD_IMAGE = By.xpath(".//*[@id='hs_cos_wrapper_module_1489585488830768']/div/a/img");
+	public static final By VALIDATE_SUPPORT_IMAGE = By.xpath(".//*[@id='hs_cos_wrapper_module_1489585492644770']/div/a/img");
+
 	
 	
 	/**
@@ -62,7 +66,7 @@ public class DataSolutionsPage extends PageControls{
 		reportInfo("clicked on Data Solutions H8 text");
 	}
 	
-	public void DataWarehouse() {
+	public void ClickingOnDataWarehouse() {
 		this.click(DataWarehouse_Page);
 		reportInfo("clicked on Data Warehouse link");
 	}
